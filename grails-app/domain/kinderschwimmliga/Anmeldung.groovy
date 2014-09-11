@@ -1,3 +1,4 @@
+package kinderschwimmliga
 class Anmeldung {
 
   Kind kind
