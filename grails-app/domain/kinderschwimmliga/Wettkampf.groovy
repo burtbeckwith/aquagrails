@@ -1,3 +1,5 @@
+package kinderschwimmliga
+
 class Wettkampf {
 
   Date datum

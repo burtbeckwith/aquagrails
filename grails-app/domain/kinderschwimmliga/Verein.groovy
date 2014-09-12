@@ -1,3 +1,5 @@
+package kinderschwimmliga
+
 class Verein {
 
   String name

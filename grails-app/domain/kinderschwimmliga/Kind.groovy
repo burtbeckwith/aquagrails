@@ -1,6 +1,8 @@
+package kinderschwimmliga
+
 class Kind {
 
-  // Kinder m�ssen mindestens 5, hoechstens 17 Jahre alt sein, um teilnehmen zu d�rfen
+  // Kinder muessen mindestens 5, hoechstens 17 Jahre alt sein, um teilnehmen zu duerfen
   static Integer MINIMUM_AGE = 5
   static Integer MAXIMUM_AGE = 17
 
@@ -22,8 +24,8 @@ class Kind {
     name(     blank: false, nullable: false)
 
 
-    // TODO: Pr�fen, ob zu alt (bisher pr�fen wir nur auf zu jung...)
-    // TODO: eventuell die Alterspr�fung durch eine Range 5..MAXIMUM_AGE ersetzen
+    // TODO: Pruefen, ob zu alt (bisher pruefen wir nur auf zu jung...)
+    // TODO: eventuell die Alterspruefung durch eine Range 5..MAXIMUM_AGE ersetzen
 
     geburtsdatum(validator: { birthdate, kid ->
                         AgeService.isOldEnough( birthdate, Kind.MINIMUM_AGE )})

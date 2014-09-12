@@ -1,3 +1,5 @@
+package kinderschwimmliga
+
 class Schwimmbad {
 
     String ort

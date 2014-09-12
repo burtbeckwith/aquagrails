@@ -1,3 +1,5 @@
+package kinderschwimmliga
+
 /************************************************************************
  * This is free software - without ANY guarantee!
  *
