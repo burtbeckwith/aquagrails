@@ -63,7 +63,7 @@ grails.project.dependency.resolution = {
         compile ":asset-pipeline:1.9.6"
 
         // plugins needed at runtime but not for compilation
-        runtime ":hibernate4:4.3.5.5" // or ":hibernate:3.6.10.17"
+        runtime ":hibernate:3.6.10.17" // or ":hibernate4:4.3.5.5"
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
 
