@@ -1,5 +1,5 @@
 package kinderschwimmliga
 
-class SchwierigkeitController {
+class OrtController {
     static scaffold = true
 }

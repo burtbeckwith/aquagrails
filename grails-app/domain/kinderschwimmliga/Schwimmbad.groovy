@@ -2,13 +2,15 @@ package kinderschwimmliga
 
 class Schwimmbad {
 
-    String ort
+    String  name
+    Ort ort
 
     static constraints = {
-      ort (blank:false, nullable: false)
+      name(maxSize:64, blank:false, nullable: false)
+      ort (nullable: false)
     }
 
     String toString() {
-      ort
+      name+' in '+ort
     }
 }

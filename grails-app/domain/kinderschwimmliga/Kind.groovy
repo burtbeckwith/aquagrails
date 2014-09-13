@@ -2,43 +2,38 @@ package kinderschwimmliga
 
 class Kind {
 
-  // Kinder muessen mindestens 5, hoechstens 17 Jahre alt sein, um teilnehmen zu duerfen
-  static Integer MINIMUM_AGE = 5
-  static Integer MAXIMUM_AGE = 17
+    // Kinder muessen mindestens 5, hoechstens 17 Jahre alt sein, um teilnehmen zu duerfen
+    static Integer MINIMUM_AGE = 5
+    static Integer MAXIMUM_AGE = 17
 
-  String vorname
-  String name
-  Date geburtsdatum
+    Date    dateCreated
+    String  vorname
+    String  name
+    Date    geburtsdatum
   
-  String strasse
-  String plz
-  String wohnort
+    Adresse adresse
 
-  Verein verein
+    Verein  verein
 
 
-  static def hasMany = [anmeldungen: Anmeldung]
+    static def hasMany = [anmeldungen: Anmeldung]
 
-  static constraints = {
-    vorname(  blank: false, nullable: false)
-    name(     blank: false, nullable: false)
+    static constraints = {
+        vorname(  blank: false, nullable: false)
+        name(     blank: false, nullable: false)
 
 
-    // TODO: Pruefen, ob zu alt (bisher pruefen wir nur auf zu jung...)
-    // TODO: eventuell die Alterspruefung durch eine Range 5..MAXIMUM_AGE ersetzen
+        // TODO: Pruefen, ob zu alt (bisher pruefen wir nur auf zu jung...)
+        // TODO: eventuell die Alterspruefung durch eine Range 5..MAXIMUM_AGE ersetzen
 
-    geburtsdatum(validator: { birthdate, kid ->
-                        AgeService.isOldEnough( birthdate, Kind.MINIMUM_AGE )})
+        //geburtsdatum(validator: { birthdate, kid ->
+        //        AgeService.isOldEnough( birthdate, Kind.MINIMUM_AGE )})
 
-    wohnort(  blank: false,  nullable: false)
+        verein(   blank: true,  nullable: true)
 
-    strasse(  blank: true,  nullable: true)
-    plz(      blank: true,  nullable: true)
-    verein(   blank: true,  nullable: true)
-
-  }
+    }
   
-  String toString() {
-    name + ', ' + vorname + ': ' + geburtsdatum.format("dd.MM.yy")
-  }
+    String toString() {
+        name + ', ' + vorname + ': ' + geburtsdatum.format("dd.MM.yy")
+    }
 }

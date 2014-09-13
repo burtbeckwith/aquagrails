@@ -3,7 +3,7 @@ package kinderschwimmliga
 class Verein {
 
   String name
-  String ort
+  Ort ort
 
   static hasMany = [mitglieder: Kind]
 
