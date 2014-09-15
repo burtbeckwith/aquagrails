@@ -1,4 +1,4 @@
-= image:aquagrails_startup_image.jpg[arc42] AquaGrails
+= image:aqua_grails_box_small.png[arc42] AquaGrails
 
 :experimental:
 
@@ -10,4 +10,6 @@ invented by Peter Hruschka, and widely used within his requirements and architec
 classes.
 
 The software solution is based upon Grails - and the documentation toolchain
-is crafted and maintained by rdmueller.
+is crafted and maintained by Ralf D. Müller.
+
+The first draft of the documentation can be found here: include::src/docs/arc42-template.adoc[arc42-template]
