@@ -22,7 +22,7 @@ ifdef::basebackend-html[]
 </style>
 ++++
 endif::basebackend-html[]
-endifndef::env-github[]
+endif::env-github[]
 
 // configure DE settings for asciidoc
 include::config.adoc[]
