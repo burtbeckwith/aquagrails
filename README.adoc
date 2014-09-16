@@ -12,5 +12,18 @@ classes.
 The software solution is based upon Grails - and the documentation toolchain
 is crafted and maintained by Ralf D. Müller.
 
-The first draft of the documentation can be found here: 
-include::src/docs/arc42-template.adoc[]
+The first draft of the documentation can be found in this projects wiki. (click on the book icon on the right)
+
+== Introduction
+
+*Grails* is a great rapid application development framework which gives the developer a kickstart by providing 
+help through scaffolding. Unfortunately, this scaffolding is only available for controllers, views and 
+automated tests, but not for documentation.
+
+*arc42* on provides a great template for the documentation of software solution architectures - scaffolding for 
+documentation!
+
+In this case study, I try to bring both worlds together in the best possible way and will document all my steps, 
+shortcuts and pitfalls as I go along.
+
+Feel free to add your knowledge by joining the project!
