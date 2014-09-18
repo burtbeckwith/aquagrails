@@ -1,4 +1,4 @@
-package kinderschwimmliga
+package usermanagement
 
 class KindController {
     static scaffold = true

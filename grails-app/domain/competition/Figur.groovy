@@ -1,4 +1,4 @@
-package kinderschwimmliga
+package competition
 
 class Figur {
 
@@ -22,3 +22,12 @@ class Figur {
 
 }
 
+public enum Schwierigkeit {
+    BABYEINFACH,
+    EINFACH,
+    MITTELEINFACH,
+    MITTELSCHWER,
+    SCHWER,
+    SAUSCHWER,
+    ZAUBEREI
+}

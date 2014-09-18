@@ -1,4 +1,6 @@
-package kinderschwimmliga
+package usermanagement
+
+import competition.Anmeldung
 
 class Kind {
 

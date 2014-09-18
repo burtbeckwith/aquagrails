@@ -1,4 +1,4 @@
-package kinderschwimmliga
+package competition
 
 class FigurController {
     static scaffold = true
