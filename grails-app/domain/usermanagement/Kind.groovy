@@ -2,7 +2,7 @@ package usermanagement
 
 import competition.Anmeldung
 
-class Kind {
+class Kind extends security.User {
 
     // Kinder muessen mindestens 5, hoechstens 17 Jahre alt sein, um teilnehmen zu duerfen
     static Integer MINIMUM_AGE = 5
