@@ -27,3 +27,17 @@ In this case study, I try to bring both worlds together in the best possible way
 shortcuts and pitfalls as I go along.
 
 Feel free to add your knowledge by joining the project!
+
+== working with the code...
+
+Just clone the code and you are ready to go:
+
+type +grailsw run-app+ to start the application
+
+type +grailsw test-app functional:+ to run the tests. You'll find the test results in +/target/test-reports/html/all.html+ 
+and screenshots in +/target/test-reports/geb/.+ .
+
+the documentation is maintained as git submodule in +/src/docs/.+ . Clone it by issuing the following two commands:
+
+* +git submodule init+
+* +git submodule update+
