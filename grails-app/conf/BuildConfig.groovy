@@ -32,6 +32,9 @@ grails.project.dependency.resolution = {
     checksums true // Whether to verify checksums on resolve
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
 
+    def gebVersion = "0.9.3"
+    def seleniumVersion = "2.43.1"
+    
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
 
@@ -51,6 +54,19 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
+
+        //for functional testing
+        test("org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion")
+        // You usually only need one of these, but this project uses both
+        test "org.gebish:geb-spock:$gebVersion"
+        test "org.gebish:geb-junit4:$gebVersion"
+        test 'org.apache.httpcomponents:httpcore:4.3'
+        test 'org.apache.httpcomponents:httpclient:4.3'        
+        // we need ghostdriver for phantomjs...
+        test( "com.github.detro.ghostdriver:phantomjsdriver:1.1.0" ) {
+            transitive = false
+        }
+        test ("org.seleniumhq.selenium:selenium-remote-driver:$seleniumVersion") // Needed by phantomjsdriver
     }
 
     plugins {
@@ -68,6 +84,8 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
 
+        test ":geb:$gebVersion"        
+        
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"
         //compile ":less-asset-pipeline:1.10.0"
