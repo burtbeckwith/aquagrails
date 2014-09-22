@@ -18,7 +18,7 @@ class AdminSpec extends GebReportingSpec {
             form.username = adminUsername
             form.password = adminPassword
             report "input credentials"
-            //loginButton.click()
+            loginButton.click()
             report "click button"
 		then: "show main menu"
             at MainMenuPage
