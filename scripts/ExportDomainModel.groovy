@@ -1,3 +1,7 @@
+// Copyright 2014 the arc42-Team and all respective contributors
+// Licensed under the Apache License, Version 2.0 (the "License")
+// original source https://github.com/arc42/aquagrails
+
 import org.codehaus.groovy.grails.commons.DefaultGrailsDomainClass
 import grails.util.GrailsNameUtils
 
