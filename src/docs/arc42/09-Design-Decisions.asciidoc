@@ -1,9 +1,8 @@
-ifndef::env-github[]
 [[section-design-decisions]]
 == Design Decisions
-endif::env-github[]
+
 ifdef::env-github[]
-link:08-Concepts[< Concepts] | link:10-Quality-Scenarios[Quality Scenarios >] 
+link:08-Concepts.asciidoc[< Concepts] | link:10-Quality-Scenarios.asciidoc[Quality Scenarios >] 
 
 endif::env-github[]
 === Quick Decisions
@@ -69,7 +68,7 @@ As location for the documentation, we use +/src/docs+ since the textual format o
 
 
 ifdef::env-github[]
-link:08-Concepts[< Concepts] | link:10-Quality-Scenarios[Quality Scenarios >] 
+link:08-Concepts.asciidoc[< Concepts] | link:10-Quality-Scenarios.asciidoc[Quality Scenarios >] 
 
 endif::env-github[]
 

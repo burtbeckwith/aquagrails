@@ -1,16 +1,15 @@
-ifndef::env-github[]
 [[section-concepts]]
 == Concepts
-endif::env-github[]
+
 ifdef::env-github[]
-link:07-Deployment-View[< Deployment View] | link:09-Design-Decisions[Design Decisions >] 
+link:07-Deployment-View.asciidoc[< Deployment View] | link:09-Design-Decisions.asciidoc[Design Decisions >] 
 
 endif::env-github[]
 
 place your own documentation here and remove the help text below as soon as you are ready.
 
 ifdef::env-github[]
-link:07-Deployment-View[< Deployment View] | link:09-Design-Decisions[Design Decisions >] 
+link:07-Deployment-View.asciidoc[< Deployment View] | link:09-Design-Decisions.asciidoc[Design Decisions >] 
 
 endif::env-github[]
 

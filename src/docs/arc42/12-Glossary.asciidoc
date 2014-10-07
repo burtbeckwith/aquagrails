@@ -1,16 +1,15 @@
-ifndef::env-github[]
 [[section-glossary]]
 == Glossary
-endif::env-github[]
+
 ifdef::env-github[]
-link:11-Technical-Risks[< Technical-Risks]
+link:11-Technical-Risks.asciidoc[< Technical-Risks]
 
 endif::env-github[]
 
 place your own documentation here and remove the help text below as soon as you are ready.
 
 ifdef::env-github[]
-link:11-Technical-Risks[< Technical-Risks]
+link:11-Technical-Risks.asciidoc[< Technical-Risks]
 
 endif::env-github[]
 
