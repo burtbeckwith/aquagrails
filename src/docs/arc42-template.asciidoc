@@ -34,7 +34,7 @@ include::arc42/about-arc42.asciidoc[About arc42]
 
 include::arc42/01-Introduction-and-Goals.asciidoc[Introduction and Goals]
 
-include::arc42/02-Architecture-Constraints.asciidoc[Architecture Constraints]
+include::arc42/02-Constraints.asciidoc[Architecture Constraints]
 
 include::arc42/03-System-Scope-and-Context.asciidoc[System Scope and Context]
 
