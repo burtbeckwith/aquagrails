@@ -1,16 +1,15 @@
-ifndef::env-github[]
 [[section-architecture-constraints]]
 == Architecture Constraints
-endif::env-github[]
+
 ifdef::env-github[]
-link:01-Introduction-and-Goals[< Introduction and Goals] | link:03-System-Scope-and-Context[System Scope and Context >] 
+link:01-Introduction-and-Goals.asciidoc[< Introduction and Goals] | link:03-System-Scope-and-Context.asciidoc[System Scope and Context >] 
 
 endif::env-github[]
 
 place your own documentation here and remove the help text below as soon as you are ready.
 
 ifdef::env-github[]
-link:01-Introduction-and-Goals[< Introduction and Goals] | link:03-System-Scope-and-Context[System Scope and Context >] 
+link:01-Introduction-and-Goals.asciidoc[< Introduction and Goals] | link:03-System-Scope-and-Context.asciidoc[System Scope and Context >] 
 
 
 endif::env-github[]
