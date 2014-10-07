@@ -24,7 +24,7 @@ ifdef::basebackend-html[]
 endif::basebackend-html[]
 endif::env-github[]
 
-include:arc42/about-arc42[About arc42]
+include::arc42/about-arc42[About arc42]
 
 // horizontal line
 ***
@@ -32,20 +32,34 @@ include:arc42/about-arc42[About arc42]
 // numbering from here on
 :numbered:
 
-include:arc42/01-Introduction-and-Goals[Introduction and Goals]
-include:arc42/02-Architecture-Constraints[Architecture Constraints]
-include:arc42/03-System-Scope-and-Context[System Scope and Context]
-include:arc42/04-Solution-Strategy[Solution Strategy]
-include:arc42/05-Building-Block-View[Building Block View]
-include:arc42/06-Runtime-View[Runtime View]
-include:arc42/07-Deployment-View.asciidoc[Deployment View]
-include:arc42/08-Concepts.asciidoc[Concepts]
-include:arc42/09-Design-Decisions[Design Decisions]
-include:arc42/10-Quality-Scenarios[Quality Scenarios]
-include:arc42/11-Technical-Risks[Technical Risks]
-include:arc42/12-Glossary[Glossary]
+include::arc42/01-Introduction-and-Goals[Introduction and Goals]
 
-include:arc42/appendix-references.asciidoc[]
-include:arc42/appendix-examples.asciidoc[]
-include:arc42/appendix-contributing.asciidoc[]
-include:arc42/appendix-practitioner.asciidoc[]
+include::arc42/02-Architecture-Constraints[Architecture Constraints]
+
+include::arc42/03-System-Scope-and-Context[System Scope and Context]
+
+include::arc42/04-Solution-Strategy[Solution Strategy]
+
+include::arc42/05-Building-Block-View[Building Block View]
+
+include::arc42/06-Runtime-View[Runtime View]
+
+include::arc42/07-Deployment-View.asciidoc[Deployment View]
+
+include::arc42/08-Concepts.asciidoc[Concepts]
+
+include::arc42/09-Design-Decisions[Design Decisions]
+
+include::arc42/10-Quality-Scenarios[Quality Scenarios]
+
+include::arc42/11-Technical-Risks[Technical Risks]
+
+include::arc42/12-Glossary[Glossary]
+
+include::arc42/appendix-references.asciidoc[]
+
+include::arc42/appendix-examples.asciidoc[]
+
+include::arc42/appendix-contributing.asciidoc[]
+
+include::arc42/appendix-practitioner.asciidoc[]
