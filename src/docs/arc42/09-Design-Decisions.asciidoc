@@ -1,0 +1,145 @@
+ifndef::env-github[]
+[[section-design-decisions]]
+== Design Decisions
+endif::env-github[]
+ifdef::env-github[]
+link:08-Concepts[< Concepts] | link:10-Quality-Scenarios[Quality Scenarios >] 
+
+endif::env-github[]
+=== Quick Decisions
+
+This section contains some simple and quick decisions where we just write down what we did and why.
+
+==== arc42 template
+
+* the template has been copied to /src/docs - the standard location for gdoc source files.
+* all subsections have been moved to an arc42-subfolder. This structures the template and leaves room for other templates like volere or a user manual.
+* a git submodule has been created for the /src/docs folder and linked to the wiki. This way, the template can be viewed and edited through the github wiki and the commits are better separated.
+* all .adoc files have been renamed to .asciidoc to be recognized by the github wiki
+* the arc42-template.adoc had to be reformatted since github doesn't link the include-statements the right way in its wiki
+* reformatted section names from "all lowercase with underscores" to "correct case with '-' instead of spaces" in order to fit the github syntax
+
+== Detailed Decisions
+
+This section contains all decisions which have to be documented in a more elaborate way.
+
+=== Technical Format and Location of Documentation
+
+==== Problem
+
+We've already decided that we'll store the documentation in a format which can be easily versioned through a VCS and it will be stored along the code. But the question still remains in which technical format and where in the source tree. Both questions should be answered to suit a wide range of projects and developer skills. The resulting solution should make it easy to find, access and update the documentation.
+
+==== Constraints
+
+The case study uses Grails as framework and GitHub as VCS, so the solution has to fit this environment
+
+==== Considered Alternatives
+
+===== GDoc
+
+http://grails.org/doc/latest/guide/conf.html#docengine[GDoc] is the current format for Grails documentation. It is a variation a textile and can be easily turned into good looking HTML and PDF by invoking the +grails doc+ command. An example is the link:http://grails.org/doc/2.3.x/[fine Grails Reference Documentation].
+
+* *Pro:* already available when you install Grails, looks good, current standard, easy to learn since there are only a few formatting rules
+* *Con:* Grails 3.0 is planned to use AsciiDoc, not supported by GitHub or BitBucket, limited formatting, http://stackoverflow.com/questions/18458636/using-images-in-gdoc-pdf-output[bug when using it with windows], not so well documented
+ 
+===== Markdown
+
+http://de.wikipedia.org/wiki/Markdown[Markdown] seems to be a superset of GDoc (but is otherwise not related) and has a wider usage. Several tools let you turn it into HTML, PDF and other formats.
+
+* *Pro:* wide usage, easy to learn, supported by GitHub and BitBucket
+* *Con:* no real standard - several dialects, no ootb support for Grails
+
+===== AsciiDoc(tor){0,1}
+
+AsciiDoc or the more advanced AsciiDoctor seems to be the new textual formatting standard for documentation. The Groovy Reference Documentation is already switching to AsciiDoc and for Grails is this move also on the horizon (but no real announcement yet). http://asciidoctor.org/[AsciiDoctor] is an open source implementation of AsciiDoc, written in Ruby and can be easily used on the JVM through jRuby. Since AsciiDoctor is under active development, it is more advanced then the original http://asciidoctor.org/[AsciiDoc] and the syntax has been changed slightly
+
+* *Pro:* powerful syntax, but still easy to learn, several implementations for a wide variety of use cases (even JavaScript), other Groovy projects are already moving to AsciiDoctor and Grails will support it with Version 3 or through plugins, subset supported by GitHub
+* *Con:* some more advanced formattings are "buggy", huge dependencies through the usage of jRuby, not supported by BitBucket
+
+===== other Alternatives, not taken into consideration
+
+* Textile, MediaWiki, Creole, reStructuredText, RDoc and others
+* binary document formats like MS Word or PDF, since they are not easy to version and contain layout which makes them not easy to convert to other formats. In Addition, these formats can be generated from text based formats
+
+==== Decision
+
+Because it seems that the future belongs to AsciiDoctor, this project will focus on the usage of AsciiDoc as technical formatting of the documentation. It also supports a wide range of target formats through additional converters.
+
+As location for the documentation, we use +/src/docs+ since the textual format of the documentation *is* the source of the docs and in addition, this is the standard Grails location for GDoc documents - so this location is already know to many developers.
+
+
+ifdef::env-github[]
+link:08-Concepts[< Concepts] | link:10-Quality-Scenarios[Quality Scenarios >] 
+
+endif::env-github[]
+
+
+[role="arc42help"]
+****
+.Contents
+Document all important design decisions and their reasons!
+
+.Motivation
+It is advantageous if all important design decisions can be found in one place. It is up to you to decide if a decision should be documented here or rather locally (e.g. in the white box descriptions of building blocks). In any case avoid redundancies.
+
+.Form
+Informal list, if possible ordered by the decisions’ importance for the reader. Use the following template to structure your decisions.
+****
+
+=== Decision Topic Template
+
+.Problem
+[role="arc42help"]
+****
+* What exactly is the challenge?
+* Why is it relevant for the architecture?
+* What consequences does the decision have?
+****
+
+.Constraints
+
+[role="arc42help"]
+****
+* Which constraints do you have to keep in mind?
+* What factors influence the decision?
+****
+
+.Assumptions
+
+[role="arc42help"]
+****
+* Which assumption have you made?
+* How can you check those assumptions?
+* Which risks are you facing?
+****
+
+.Considered Alternatives
+
+[role="arc42help"]
+****
+* Which alternative options did you consider?
+* How do you judge each one?
+* Which alternatives are you excluding deliberately?
+****
+
+.Decision
+
+[role="arc42help"]
+****
+* Who (if not you) has decided?
+* How has the decision been justified?
+* When did you decide?
+****
+
+=== Decision Topic 1
++
+
+=== Decision Topic 2
++
+
+=== Decision Topic 3
++
+
+=== ...
++
+

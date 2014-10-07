@@ -1,0 +1,49 @@
+h1. Glossary
+
+*Contents.*
+
+The most important terms of the software architecture in alphabetic order.
+
+*Motivation.*
+
+It should not be necessary to explain the usefulness of a glossary ...
+
+*Form.*
+
+A simple table with columns &lt;Term&gt; and &lt;Definition&gt;
+
+<table>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<thead>
+<tr class="header">
+<th align="left">Glossary</th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Term
+</td>
+<td align="left">Synonym
+</td>
+<td align="left">Description
+</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Term
+</td>
+<td align="left">Synonym
+</td>
+<td align="left">Description
+</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+

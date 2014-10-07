@@ -1,0 +1,7 @@
+Welcome to the aquagrails wiki!
+
+link:arc42-template[Start Here]
+
+=== Lessons Learnt
+
+*AsciiDoc on GitHub*: AsciiDoc documents in the repository are rendered in a different way than in the wiki - includes, folders ...

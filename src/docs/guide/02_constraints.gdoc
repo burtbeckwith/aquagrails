@@ -1,0 +1,227 @@
+h1. Architecture Constraints
+
+*Contents.*
+
+Any requirement that constrains software architects in their freedom of design decisions or the development process.
+
+*Motivation.*
+
+Architects should know exactly where they are free in their design decisions and where they must adhere to constraints. Constraints must always be dealt with; they may be negotiable, though.
+
+*Form.*
+
+Informal lists, structured by the sub-sections of this section.
+
+*Examples.*
+
+see subsections
+
+*Background information.*
+
+In the optimal case constraints are defined by requirements. In any case, at least the architects must be aware of constraints. The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999) using the term “global analysis”.
+
+h2. Technical Constraints
+
+*Contents.*
+
+List all technical constraints in this section. This category covers hard- and software infrastructure, applied technologies (operating systems, middleware, databases, programming languages, ...).
+
+<table>
+<caption>List of Technical Constraints</caption>
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr class="header">
+<th align="left">Technical Constraints</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">_Hardware Constraints_
+</td>
+</tr>
+<tr class="even">
+<td align="left">C1
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">C2
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="even">
+<td align="left">C3
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">_Software Constraints_
+</td>
+</tr>
+<tr class="even">
+<td align="left">C4
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">C5
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="even">
+<td align="left">C6
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">_Operating System Constraints_
+</td>
+</tr>
+<tr class="even">
+<td align="left">C7
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">C8
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="even">
+<td align="left">C9
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">_Programming Constraints_
+</td>
+</tr>
+<tr class="even">
+<td align="left">C10
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">C11
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="even">
+<td align="left">C12
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+</tbody>
+</table>
+
+h2. Organizational Constraints
+
+*Contents.*
+
+Enter all organizational, structural, and resource-related constraints. This category also covers standards and legal constraints that you must comply with.
+
+<table>
+<caption>List of Organizational Constraints</caption>
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr class="header">
+<th align="left">Organizational Constraints</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">_Organization and Structure_
+</td>
+</tr>
+<tr class="even">
+<td align="left">C1
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">C2
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="even">
+<td align="left">_Resources (Budget, Time, Personnel)_
+</td>
+</tr>
+<tr class="odd">
+<td align="left">C3
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="even">
+<td align="left">C4
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">_Organizational Standards_
+</td>
+</tr>
+<tr class="even">
+<td align="left">C5
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="odd">
+<td align="left">C6
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="even">
+<td align="left">_Legal Factors_
+</td>
+</tr>
+<tr class="odd">
+<td align="left">C7
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+<tr class="even">
+<td align="left">C8
+</td>
+<td align="left">insert description here
+</td>
+</tr>
+</tbody>
+</table>
+
+h2. Conventions
+
+*Contents.*
+
+List all conventions that are relevant for the development of your software architecture.
+
+*Form.*
+
+Either insert the conventions directly in this document or refer to other documents.
+
+* Coding guidelines
+* Documentation guidelines
+* Guidelines for version and configuration management
+* Naming conventions
+

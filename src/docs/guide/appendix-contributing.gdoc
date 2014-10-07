@@ -1,0 +1,39 @@
+h1. Danksagung + Mitwirkung
+
+arc42 stammt ursprünglich von "Dr. Peter Hruschka":http://b-agile.de und "Dr. Gernot Starke":http://gernotstarke.de.
+
+<dl>
+<dt>Quellen</dt>
+<dd><p>Wir pflegen arc42 zur Zeit im _asciidoc_ Format, gehosted bei "GitHub unter der arc42-Organisation":https://github.com/aim42/aim42.</p></dd>
+<dt>Issues</dt>
+<dd><p>Wir pflegen eine Liste "offener Punkte und Fehler":https://github.com/arc42/arc42-template/issues.</p></dd>
+</dl>
+
+Wir freuen uns, wenn Sie Fehler/Unklarheiten in einem Fork korrigieren und uns einen _pull request_ schicken!
+
+h2. Mitwirkende
+
+Wir danken ausdrücklich allen aktiven und früheren Mitwirkenden sowie den zahlreichen (anonymen) Ratgebern, Fehlerfindern und Anwendern für Ihre Hilfe und Unterstützung.
+
+h3. Zur Zeit aktiv
+
+* Gernot Starke
+* Stefan Zörner
+* Markus Schärtel
+* Ralf D. Müller
+* Peter Hruschka
+* Jürgen Krey
+
+h3. Frühere Mitwirkende
+
+(in alfabetischer Reihenfolge)
+
+* Anne Aloysius
+* Matthias Bohlen
+* Karl Eilebrecht
+* Manfred Ferken
+* Phillip Ghadir
+* Carsten Klein
+* Prof. Arne Koschel
+* Axel Scheithauer
+

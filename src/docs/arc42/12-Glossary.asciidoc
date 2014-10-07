@@ -1,0 +1,35 @@
+ifndef::env-github[]
+[[section-glossary]]
+== Glossary
+endif::env-github[]
+ifdef::env-github[]
+link:11-Technical-Risks[< Technical-Risks]
+
+endif::env-github[]
+
+place your own documentation here and remove the help text below as soon as you are ready.
+
+ifdef::env-github[]
+link:11-Technical-Risks[< Technical-Risks]
+
+endif::env-github[]
+
+[role="arc42help"]
+****
+.Contents
+The most important terms of the software architecture in alphabetic order.
+
+.Motivation
+It should not be necessary to explain the usefulness of a glossary …
+
+.Form
+A simple table with columns <Term> and <Definition>
+
+****
+
+[options="header"]
+|===
+| Glossary                    |||
+| Term                        | Synonym                 | Description |
+| Term                        | Synonym                 | Description |
+|===
