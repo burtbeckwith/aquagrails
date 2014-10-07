@@ -1,4 +1,4 @@
-= image:graphics/aqua_grails_box_small.png[arc42] AquaGrails
+= image:graphics/aqua_grails_box_small.png["arc42",float="left"] AquaGrails
 
 :experimental:
 
@@ -41,7 +41,4 @@ switch to the FireFox WebDriver by running the tests with +grails -Dgeb.env=fire
 +grails "-Dgeb.env=firefox" test-app functional:+ if you are working with a windows system. For other WebDrivers, 
 you have to configure the dependencies section in the BuildConfig.groovy and the GebConfig.Groovy.
 
-the documentation is maintained as git submodule in +/src/docs/.+ . Clone it by issuing the following two commands:
-
-* +git submodule init+
-* +git submodule update+
+the documentation is maintained here link:src/docs/arc42-template.asciidoc[]
