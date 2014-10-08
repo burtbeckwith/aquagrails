@@ -6,7 +6,7 @@ link:02-Constraints.asciidoc[< Constraints] | link:04-Solution-Strategy.asciidoc
 
 endif::env-github[]
 
-place your own documentation here and remove the help text below as soon as you are ready.
+NOTE: place your own documentation here and remove the help text below as soon as you are ready.
 
 ifdef::env-github[]
 link:02-Constraints.asciidoc[< Constraints] | link:04-Solution-Strategy.asciidoc[Solution Strategy >] 
