@@ -12,7 +12,7 @@ grails.project.fork = [
     //  compile: [maxMemory: 256, minMemory: 64, debug: false, maxPerm: 256, daemon:true],
 
     // configure settings for the test-app JVM, uses the daemon by default
-    test: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256, daemon:true],
+    test: false,
     // configure settings for the run-app JVM
     run: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256, forkReserve:false],
     // configure settings for the run-war JVM
@@ -43,6 +43,8 @@ grails.project.dependency.resolution = {
         mavenLocal()
         grailsCentral()
         mavenCentral()
+        //for spock-reports
+        mavenRepo "http://jcenter.bintray.com"
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
@@ -53,6 +55,10 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
+
+        //https://github.com/renatoathaydes/spock-reports
+        test "com.athaydes:spock-reports:1.2.3"
+        
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
 
         //for functional testing
@@ -62,11 +68,14 @@ grails.project.dependency.resolution = {
         test "org.gebish:geb-junit4:$gebVersion"
         test 'org.apache.httpcomponents:httpcore:4.3'
         test 'org.apache.httpcomponents:httpclient:4.3'        
+        test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
         // we need ghostdriver for phantomjs...
         test( "com.github.detro.ghostdriver:phantomjsdriver:1.1.0" ) {
             transitive = false
         }
         test ("org.seleniumhq.selenium:selenium-remote-driver:$seleniumVersion") // Needed by phantomjsdriver
+
+        
     }
 
     plugins {
@@ -83,9 +92,13 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:3.6.10.17" // or ":hibernate4:4.3.5.5"
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
-
+        
+        runtime ":uml-class-diagram:0.3.3"
+                
         test ":geb:$gebVersion"        
         
+        // code coverage with cobertura
+        test ":code-coverage:2.0.3-3"        
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"
         //compile ":less-asset-pipeline:1.10.0"
@@ -93,3 +106,5 @@ grails.project.dependency.resolution = {
         //compile ":handlebars-asset-pipeline:1.3.0.3"
     }
 }
+//grails.plugin.location.'arc42' = '../grails-arc42'
+//grails.plugin.location.'filmStrip' = "../grails-filmStrip"
