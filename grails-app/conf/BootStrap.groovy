@@ -9,6 +9,9 @@ class BootStrap {
             development {
                 devandtest.DummyDataGenerator.generate()
             }
+            test {
+                devandtest.DummyDataGenerator.generate()
+            }
             
         }
         userService.createAdminUser()
